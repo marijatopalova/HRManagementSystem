@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace HRManagementSystem.Application.Commands
+namespace HRManagementSystem.Application.Departments.Commands
 {
     public class CreateDepartmentCommand : IRequest<int>
     {

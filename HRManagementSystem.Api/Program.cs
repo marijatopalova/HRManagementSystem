@@ -1,4 +1,4 @@
-using HRManagementSystem.Application.Commands;
+using HRManagementSystem.Application.Employees.Commands;
 using HRManagementSystem.Infrastructure.Data;
 using HRManagementSystem.Infrastructure.Interfaces;
 using HRManagementSystem.Infrastructure.Repositories;

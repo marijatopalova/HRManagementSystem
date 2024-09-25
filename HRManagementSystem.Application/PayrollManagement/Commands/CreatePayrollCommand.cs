@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Application.Commands
+namespace HRManagementSystem.Application.PayrollManagement.Commands
 {
     public class CreatePayrollCommand : IRequest
     {

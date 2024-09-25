@@ -1,8 +1,9 @@
-﻿namespace HRManagementSystem.Application.DTOs
+﻿using MediatR;
+
+namespace HRManagementSystem.Application.Employees.Commands
 {
-    public class EmployeeDto
+    public class CreateEmployeeCommand : IRequest<int>
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public int RoleId { get; set; }

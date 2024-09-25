@@ -1,8 +1,8 @@
-﻿using HRManagementSystem.Application.DTOs;
+﻿using HRManagementSystem.Application.Employees.DTOs;
 using HRManagementSystem.Infrastructure.Interfaces;
 using MediatR;
 
-namespace HRManagementSystem.Application.Queries
+namespace HRManagementSystem.Application.Employees.Queries
 {
     public class GetEmployeeByIdQueryHandler(IEmployeeRepository employeeRepository) : IRequestHandler<GetEmployeeByIdQuery, EmployeeDto>
     {

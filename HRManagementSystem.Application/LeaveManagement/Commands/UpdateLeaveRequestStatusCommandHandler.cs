@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Application.Commands
+namespace HRManagementSystem.Application.LeaveManagement.Commands
 {
     public class UpdateLeaveRequestStatusCommandHandler(ILeaveRequestRepository leaveRequestRepository) : IRequestHandler<UpdateLeaveRequestStatusCommand>
     {
         public async Task Handle(UpdateLeaveRequestStatusCommand request, CancellationToken cancellationToken)
         {
             var leaveRequest = await leaveRequestRepository.GetByIdAsync(request.LeaveRequestId);
-            if (leaveRequest == null) 
+            if (leaveRequest == null)
             {
                 throw new ArgumentException("Leave request not found.");
             }

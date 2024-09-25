@@ -1,5 +1,5 @@
-﻿using HRManagementSystem.Application.Commands;
-using HRManagementSystem.Application.DTOs;
+﻿using HRManagementSystem.Application.Departments.Commands;
+using HRManagementSystem.Application.Departments.DTOs;
 using HRManagementSystem.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;

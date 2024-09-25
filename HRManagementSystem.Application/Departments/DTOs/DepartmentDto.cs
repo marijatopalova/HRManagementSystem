@@ -1,4 +1,4 @@
-﻿namespace HRManagementSystem.Application.DTOs
+﻿namespace HRManagementSystem.Application.Departments.DTOs
 {
     public class DepartmentDto
     {

@@ -2,7 +2,7 @@
 using HRManagementSystem.Infrastructure.Interfaces;
 using MediatR;
 
-namespace HRManagementSystem.Application.Commands
+namespace HRManagementSystem.Application.Departments.Commands
 {
     public class CreateDepartmentCommandHandler(IDepartmentRepository departmentRepository) : IRequestHandler<CreateDepartmentCommand, int>
     {

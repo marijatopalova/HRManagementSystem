@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace HRManagementSystem.Application.Commands
+namespace HRManagementSystem.Application.Employees.Commands
 {
     public class CreateRoleCommand : IRequest<int>
     {

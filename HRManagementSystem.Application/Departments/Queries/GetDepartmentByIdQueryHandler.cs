@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Application.DTOs;
+﻿using HRManagementSystem.Application.Departments.DTOs;
 using HRManagementSystem.Infrastructure.Interfaces;
 using MediatR;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Application.Queries
+namespace HRManagementSystem.Application.Departments.Queries
 {
     public class GetDepartmentByIdQueryHandler(IDepartmentRepository departmentRepository) : IRequestHandler<GetDepartmentByIdQuery, DepartmentDto>
     {

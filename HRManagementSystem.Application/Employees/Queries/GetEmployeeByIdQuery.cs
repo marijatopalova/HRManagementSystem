@@ -1,7 +1,7 @@
-﻿using HRManagementSystem.Application.DTOs;
+﻿using HRManagementSystem.Application.Employees.DTOs;
 using MediatR;
 
-namespace HRManagementSystem.Application.Queries
+namespace HRManagementSystem.Application.Employees.Queries
 {
     public class GetEmployeeByIdQuery : IRequest<EmployeeDto>
     {

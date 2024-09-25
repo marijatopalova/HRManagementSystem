@@ -22,4 +22,9 @@
     <ProjectReference Include="..\HRManagementSystem.Infrastructure\HRManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="LeaveManagement\Queries\" />
+    <Folder Include="PayrollManagement\Queries\" />
+  </ItemGroup>
+
 </Project>

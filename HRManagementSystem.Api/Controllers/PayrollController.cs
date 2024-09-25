@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Application.Commands;
+﻿using HRManagementSystem.Application.PayrollManagement.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
