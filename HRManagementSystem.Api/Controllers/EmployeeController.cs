@@ -34,10 +34,24 @@ namespace HRManagementSystem.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<int>> CreateEmployee([FromBody] CreateEmployeeCommand command)
+        public async Task<ActionResult<int>> CreateEmployeeAsync([FromBody] CreateEmployeeCommand command)
         {
             var employeeId = await mediator.Send(command);
             return Ok(employeeId);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> AddPerformanceReviewAsync([FromBody] CreatePerformanceReviewCommand command)
+        {
+            var performanceReviewId = await mediator.Send(command);
+            return Ok(performanceReviewId);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> CreateRoleAsync([FromBody] CreateRoleCommand command)
+        {
+            var roleId = await mediator.Send(command);
+            return Ok(roleId);
         }
     }
 }

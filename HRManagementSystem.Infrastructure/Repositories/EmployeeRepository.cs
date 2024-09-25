@@ -16,6 +16,7 @@ namespace HRManagementSystem.Infrastructure.Repositories
         {
             return await dbContext.Employees
                 .Include(e => e.Department)
+                .Include(e => e.Role)
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
@@ -23,6 +24,7 @@ namespace HRManagementSystem.Infrastructure.Repositories
         {
             return await dbContext.Employees
                 .Include(e => e.Department)
+                .Include(e => e.Role)
                 .ToListAsync();
         }
 

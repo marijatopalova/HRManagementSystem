@@ -20,7 +20,8 @@ namespace HRManagementSystem.Application.Queries
                 Id = x.Id,
                 Name = x.Name,
                 DepartmentId = x.DepartmentId,
-                Position = x.Position
+                RoleId = x.RoleId,
+                Email = x.Email,
             });
         }
     }

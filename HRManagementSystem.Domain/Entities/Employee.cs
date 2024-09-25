@@ -10,8 +10,12 @@ namespace HRManagementSystem.Domain.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Position { get; set; }
+        public string Email { get; set; }
+        public int RoleId { get; set; }
         public int DepartmentId { get; set; }
+        public Role Role { get; set; }
         public Department Department { get; set; }
+        public ICollection<PerformanceReview> PerformanceReviews { get; set; }
+        public ICollection<LeaveRequest> LeaveRequests { get; set; }
     }
 }

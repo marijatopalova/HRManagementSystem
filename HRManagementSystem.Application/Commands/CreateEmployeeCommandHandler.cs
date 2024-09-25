@@ -11,7 +11,8 @@ namespace HRManagementSystem.Application.Commands
             var employee = new Employee
             {
                 Name = request.Name,
-                Position = request.Position,
+                Email = request.Email,
+                RoleId = request.RoleId,
                 DepartmentId = request.DepartmentId
             };
 

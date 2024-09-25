@@ -20,6 +20,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IPerformanceReviewRepository, PerformanceReviewRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<CreateEmployeeCommand>());
 
