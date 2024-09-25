@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRManagementSystem.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/employee")]
     [ApiController]
     public class EmployeeController(IMediator mediator) : ControllerBase
     {
@@ -24,7 +24,7 @@ namespace HRManagementSystem.Api.Controllers
             return Ok(result);
         }
 
-        [HttpGet]
+        [HttpGet("employees")]
         public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetAllEmployeesAsync()
         {
             var query = new GetAllEmployeesQuery();
@@ -33,25 +33,32 @@ namespace HRManagementSystem.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
+        [HttpPost("new-employee")]
         public async Task<ActionResult<int>> CreateEmployeeAsync([FromBody] CreateEmployeeCommand command)
         {
             var employeeId = await mediator.Send(command);
             return Ok(employeeId);
         }
 
-        [HttpPost]
+        [HttpPost("performance-review")]
         public async Task<ActionResult<int>> AddPerformanceReviewAsync([FromBody] CreatePerformanceReviewCommand command)
         {
             var performanceReviewId = await mediator.Send(command);
             return Ok(performanceReviewId);
         }
 
-        [HttpPost]
+        [HttpPost("role")]
         public async Task<ActionResult<int>> CreateRoleAsync([FromBody] CreateRoleCommand command)
         {
             var roleId = await mediator.Send(command);
             return Ok(roleId);
+        }
+
+        [HttpPost("leave-request")]
+        public async Task<ActionResult<int>> CreateLeaveRequestAsync([FromBody] CreateLeaveRequestCommand command)
+        {
+            var leaveRequestId = await mediator.Send(command);
+            return Ok(leaveRequestId);
         }
     }
 }
