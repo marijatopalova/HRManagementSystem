@@ -23,6 +23,7 @@ builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IPerformanceReviewRepository, PerformanceReviewRepository>();
 builder.Services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
+builder.Services.AddScoped<IPayrollRepository, PayrollRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<CreateEmployeeCommand>());
 

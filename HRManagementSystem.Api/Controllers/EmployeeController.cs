@@ -53,12 +53,5 @@ namespace HRManagementSystem.Api.Controllers
             var roleId = await mediator.Send(command);
             return Ok(roleId);
         }
-
-        [HttpPost("leave-request")]
-        public async Task<ActionResult<int>> CreateLeaveRequestAsync([FromBody] CreateLeaveRequestCommand command)
-        {
-            var leaveRequestId = await mediator.Send(command);
-            return Ok(leaveRequestId);
-        }
     }
 }
