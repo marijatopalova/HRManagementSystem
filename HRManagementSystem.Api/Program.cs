@@ -9,8 +9,6 @@ using HRManagementSystem.Infrastructure.LeaveManagement.Repositories;
 using HRManagementSystem.Infrastructure.PayrollManagement.Interfaces;
 using HRManagementSystem.Infrastructure.PayrollManagement.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +28,7 @@ builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IPerformanceReviewRepository, PerformanceReviewRepository>();
 builder.Services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
 builder.Services.AddScoped<IPayrollRepository, PayrollRepository>();
+builder.Services.AddScoped<IDepartmentSettingsRepository, DepartmentSettingsRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<CreateEmployeeCommand>());
 

@@ -2,7 +2,6 @@
 using HRManagementSystem.Application.Employees.DTOs;
 using HRManagementSystem.Application.Employees.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HRManagementSystem.Api.Controllers
@@ -17,7 +16,7 @@ namespace HRManagementSystem.Api.Controllers
             var query = new GetEmployeeByIdQuery { Id = id };
             var result = await mediator.Send(query);
 
-            if(result == null)
+            if (result == null)
             {
                 return NotFound();
             }

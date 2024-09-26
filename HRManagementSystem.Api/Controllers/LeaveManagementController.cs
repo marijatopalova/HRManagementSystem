@@ -1,4 +1,6 @@
 ﻿using HRManagementSystem.Application.LeaveManagement.Commands;
+using HRManagementSystem.Application.LeaveManagement.DTOs;
+using HRManagementSystem.Application.LeaveManagement.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +16,20 @@ namespace HRManagementSystem.Api.Controllers
         {
             var leaveRequestId = await mediator.Send(command);
             return Ok(leaveRequestId);
+        }
+
+        [HttpGet("id")]
+        public async Task<ActionResult<LeaveRequestDto>> GetLeaveRequestByIdAsync(int id)
+        {
+            var query = new GetLeaveRequestByIdQuery { Id = id };
+
+            var result = await mediator.Send(query);
+            if(result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
         }
     }
 }

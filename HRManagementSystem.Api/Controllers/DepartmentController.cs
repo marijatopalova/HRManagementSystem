@@ -2,12 +2,11 @@
 using HRManagementSystem.Application.Departments.DTOs;
 using HRManagementSystem.Application.Departments.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HRManagementSystem.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/department")]
     [ApiController]
     public class DepartmentController(IMediator mediator) : ControllerBase
     {
@@ -36,6 +35,13 @@ namespace HRManagementSystem.Api.Controllers
         {
             var departments = await mediator.Send(new GetAllDepartmentsQuery());
             return Ok(departments);
+        }
+
+        [HttpPost("settings")]
+        public async Task<ActionResult<int>> CreateDepartmentSettingsAsync([FromBody] CreateDepartmentSettingsCommand command)
+        {
+            var settingsId = await mediator.Send(command);
+            return Ok(settingsId);
         }
     }
 }
