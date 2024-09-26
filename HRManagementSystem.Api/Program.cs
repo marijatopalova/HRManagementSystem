@@ -9,6 +9,10 @@ using HRManagementSystem.Infrastructure.LeaveManagement.Repositories;
 using HRManagementSystem.Infrastructure.PayrollManagement.Interfaces;
 using HRManagementSystem.Infrastructure.PayrollManagement.Repositories;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
+using HRManagementSystem.Application.Departments.Validators;
+using MediatR;
+using HRManagementSystem.Application.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +35,9 @@ builder.Services.AddScoped<IPayrollRepository, PayrollRepository>();
 builder.Services.AddScoped<IDepartmentSettingsRepository, DepartmentSettingsRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<CreateEmployeeCommand>());
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateDepartmentCommandValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
 var app = builder.Build();
 
