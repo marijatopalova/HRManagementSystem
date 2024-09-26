@@ -1,6 +1,6 @@
 ﻿using HRManagementSystem.Domain.Departments;
 
-namespace HRManagementSystem.Infrastructure.Interfaces
+namespace HRManagementSystem.Infrastructure.Departments.Interfaces
 {
     public interface IDepartmentRepository
     {

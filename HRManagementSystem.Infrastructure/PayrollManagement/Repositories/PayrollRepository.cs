@@ -1,9 +1,9 @@
 ﻿using HRManagementSystem.Domain.PayrollManagement;
 using HRManagementSystem.Infrastructure.Data;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.PayrollManagement.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace HRManagementSystem.Infrastructure.Repositories
+namespace HRManagementSystem.Infrastructure.PayrollManagement.Repositories
 {
     public class PayrollRepository(ApplicationDbContext dbContext) : IPayrollRepository
     {

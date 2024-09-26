@@ -1,6 +1,6 @@
 ﻿using HRManagementSystem.Domain.Employees;
 using HRManagementSystem.Infrastructure.Data;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.Employees.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Infrastructure.Repositories
+namespace HRManagementSystem.Infrastructure.Employees.Repositories
 {
     public class EmployeeRepository(ApplicationDbContext dbContext) : IEmployeeRepository
     {

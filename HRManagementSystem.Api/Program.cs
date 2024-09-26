@@ -1,7 +1,13 @@
 using HRManagementSystem.Application.Employees.Commands;
 using HRManagementSystem.Infrastructure.Data;
-using HRManagementSystem.Infrastructure.Interfaces;
-using HRManagementSystem.Infrastructure.Repositories;
+using HRManagementSystem.Infrastructure.Departments.Interfaces;
+using HRManagementSystem.Infrastructure.Departments.Repositories;
+using HRManagementSystem.Infrastructure.Employees.Interfaces;
+using HRManagementSystem.Infrastructure.Employees.Repositories;
+using HRManagementSystem.Infrastructure.LeaveManagement.Interfaces;
+using HRManagementSystem.Infrastructure.LeaveManagement.Repositories;
+using HRManagementSystem.Infrastructure.PayrollManagement.Interfaces;
+using HRManagementSystem.Infrastructure.PayrollManagement.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;

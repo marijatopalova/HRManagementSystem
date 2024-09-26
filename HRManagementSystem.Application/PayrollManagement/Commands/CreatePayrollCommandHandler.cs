@@ -1,5 +1,5 @@
-﻿using HRManagementSystem.Domain.Entities;
-using HRManagementSystem.Infrastructure.Interfaces;
+﻿using HRManagementSystem.Domain.PayrollManagement;
+using HRManagementSystem.Infrastructure.PayrollManagement.Interfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;

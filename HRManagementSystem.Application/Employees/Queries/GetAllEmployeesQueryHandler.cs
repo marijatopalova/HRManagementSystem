@@ -1,5 +1,5 @@
 ﻿using HRManagementSystem.Application.Employees.DTOs;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.Employees.Interfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;

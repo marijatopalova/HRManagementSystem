@@ -1,6 +1,6 @@
 ﻿using HRManagementSystem.Domain.Employees;
 
-namespace HRManagementSystem.Infrastructure.Interfaces
+namespace HRManagementSystem.Infrastructure.Employees.Interfaces
 {
     public interface IEmployeeRepository
     {

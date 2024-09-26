@@ -1,5 +1,5 @@
 ﻿using HRManagementSystem.Domain.LeaveManagement;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.LeaveManagement.Interfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;

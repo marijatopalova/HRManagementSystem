@@ -1,5 +1,5 @@
-﻿using HRManagementSystem.Domain.Entities;
-using HRManagementSystem.Infrastructure.Interfaces;
+﻿using HRManagementSystem.Domain.Departments;
+using HRManagementSystem.Infrastructure.Departments.Interfaces;
 using MediatR;
 
 namespace HRManagementSystem.Application.Departments.Commands

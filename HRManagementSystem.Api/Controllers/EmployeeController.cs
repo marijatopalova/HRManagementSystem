@@ -1,6 +1,6 @@
 ﻿using HRManagementSystem.Application.Employees.Commands;
 using HRManagementSystem.Application.Employees.DTOs;
-using HRManagementSystem.Application.Queries;
+using HRManagementSystem.Application.Employees.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

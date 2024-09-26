@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Infrastructure.Interfaces
+namespace HRManagementSystem.Infrastructure.LeaveManagement.Interfaces
 {
     public interface ILeaveRequestRepository
     {

@@ -1,9 +1,9 @@
 ﻿using HRManagementSystem.Domain.Departments;
 using HRManagementSystem.Infrastructure.Data;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.Departments.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace HRManagementSystem.Infrastructure.Repositories
+namespace HRManagementSystem.Infrastructure.Departments.Repositories
 {
     public class DepartmentRepository(ApplicationDbContext dbContext) : IDepartmentRepository
     {

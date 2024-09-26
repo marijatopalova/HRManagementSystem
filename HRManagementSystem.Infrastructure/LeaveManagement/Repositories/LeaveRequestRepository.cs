@@ -1,6 +1,6 @@
 ﻿using HRManagementSystem.Domain.LeaveManagement;
 using HRManagementSystem.Infrastructure.Data;
-using HRManagementSystem.Infrastructure.Interfaces;
+using HRManagementSystem.Infrastructure.LeaveManagement.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Infrastructure.Repositories
+namespace HRManagementSystem.Infrastructure.LeaveManagement.Repositories
 {
     public class LeaveRequestRepository(ApplicationDbContext dbContext) : ILeaveRequestRepository
     {
