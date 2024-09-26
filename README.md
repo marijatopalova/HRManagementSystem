@@ -34,3 +34,19 @@ The system is based on the **Clean Architecture** principles, ensuring separatio
 - **FluentValidation**
 - **SQL Server** (or any other database provider)
 - **Docker** support for containerized deployment
+
+## Getting Started
+
+### Prerequisites
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- SQL Server 
+- Docker (optional)
+
+### Running the Application
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/marijatopalova/HRManagementSystem.git
+   cd HRManagementSystem
