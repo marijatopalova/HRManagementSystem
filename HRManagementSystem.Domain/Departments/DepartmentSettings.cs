@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRManagementSystem.Domain.Entities
+namespace HRManagementSystem.Domain.Departments
 {
     public class DepartmentSettings
     {

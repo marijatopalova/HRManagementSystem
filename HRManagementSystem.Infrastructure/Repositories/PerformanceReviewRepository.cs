@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.Employees;
 using HRManagementSystem.Infrastructure.Data;
 using HRManagementSystem.Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;

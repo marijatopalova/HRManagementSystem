@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.Departments;
 
 namespace HRManagementSystem.Infrastructure.Interfaces
 {

@@ -1,4 +1,7 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.Departments;
+using HRManagementSystem.Domain.Employees;
+using HRManagementSystem.Domain.LeaveManagement;
+using HRManagementSystem.Domain.PayrollManagement;
 using Microsoft.EntityFrameworkCore;
 
 namespace HRManagementSystem.Infrastructure.Data

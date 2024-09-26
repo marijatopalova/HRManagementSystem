@@ -1,4 +1,6 @@
-﻿namespace HRManagementSystem.Domain.Entities
+﻿using HRManagementSystem.Domain.Employees;
+
+namespace HRManagementSystem.Domain.Departments
 {
     public class Department
     {

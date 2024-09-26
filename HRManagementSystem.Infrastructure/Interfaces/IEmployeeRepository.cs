@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.Employees;
 
 namespace HRManagementSystem.Infrastructure.Interfaces
 {

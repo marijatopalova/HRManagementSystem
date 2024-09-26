@@ -1,4 +1,4 @@
-﻿namespace HRManagementSystem.Domain.Entities
+﻿namespace HRManagementSystem.Domain.LeaveManagement
 {
     public enum LeaveStatus
     {

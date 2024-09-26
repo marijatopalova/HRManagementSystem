@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.LeaveManagement;
 using MediatR;
 using System;
 using System.Collections.Generic;

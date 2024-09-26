@@ -1,4 +1,4 @@
-﻿using HRManagementSystem.Domain.Entities;
+﻿using HRManagementSystem.Domain.PayrollManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
