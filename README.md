@@ -32,7 +32,7 @@ The system is based on the **Clean Architecture** principles, ensuring separatio
 - **Entity Framework Core**
 - **CQRS and MediatR**
 - **FluentValidation**
-- **SQL Server** (or any other database provider)
+- **SQL Server** 
 - **Docker** support for containerized deployment
 
 ## Getting Started
