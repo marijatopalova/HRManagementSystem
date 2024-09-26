@@ -23,7 +23,7 @@ The system is based on the **Clean Architecture** principles, ensuring separatio
 
 1. **Domain Layer**: Contains core business logic and entity definitions.
 2. **Application Layer**: Implements use cases (commands/queries) and validation. Includes business rules using CQRS and MediatR.
-3. **Infrastructure Layer**: Contains data access (EF Core), external services (like email), and repository implementations.
+3. **Infrastructure Layer**: Contains data access (EF Core) and repository implementations.
 4. **API Layer**: The entry point of the system, exposes RESTful endpoints to handle requests, and interacts with the Application layer.
 
 ### Technologies Used
